@@ -1,6 +1,6 @@
 # Context
 - Amazon are catching up to reused epubs. On Reddit, a fix was established, and my goal is to make it simple as possible.
-- This script was created by ChatGBT A.I
+- This script was created by ChatGPT A.I
 # Prerequisite
 - You need to have Calibre installed: https://calibre-ebook.com/
 # How TO INSTALL (Autorun)

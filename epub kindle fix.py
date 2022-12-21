@@ -1,3 +1,4 @@
+import os
 import subprocess 
 import tkinter as tk  
 import time  
@@ -50,3 +51,6 @@ time.sleep(1)
 
 # Convert output.mobi back to output.epub
 convert_ebook('output.mobi', 'output.epub', 'epub')
+
+# Delete the output.mobi file
+os.remove('output.mobi')

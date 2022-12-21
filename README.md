@@ -6,4 +6,4 @@
 # How TO RUN
 - Run program with your favourite python gui/command line
 # How TO USE
-- The script will ask where the epub is, then once the epub converts to a mobi, the script will ask again where the mobi is (Will make it easier in the future)
+- The script will ask where the epub is, then once the epub converts to a mobi, the script will ask again where the mobi is ~~(Will make it easier in the future)~~ FIXED

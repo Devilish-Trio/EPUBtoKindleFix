@@ -1,33 +1,33 @@
 import subprocess
 import tkinter as tk
+import time
 from tkinter import filedialog
 
-def epub_to_mobi(mobi_file):
+def select_input_file(input_format):
     root = tk.Tk()
     root.withdraw()
 
-    epub_file = filedialog.askopenfilename(
+    input_file = filedialog.askopenfilename(
         parent=root,
-        title='Select input epub file',
-        filetypes=[('EPUB files', '*.epub')]
+        title=f'Select input {input_format} file',
+        filetypes=[(f'{input_format.upper()} files', f'*.{input_format}')]
     )
 
-    cmd = ['ebook-convert', epub_file, mobi_file]
+    return input_file
+
+def convert_ebook(input_file, output_file, output_format):
+    cmd = ['ebook-convert', input_file, output_file]
     subprocess.run(cmd)
 
-epub_to_mobi('output.mobi')
+# Select input epub file
+input_format = 'epub'
+input_file = select_input_file(input_format)
 
-def mobi_to_epub(epub_file):
-    root = tk.Tk()
-    root.withdraw()
+# Convert input epub to output.mobi
+convert_ebook(input_file, 'output.mobi', 'mobi')
 
-    mobi_file = filedialog.askopenfilename(
-        parent=root,
-        title='Select input mobi file',
-        filetypes=[('MOBI files', '*.mobi')]
-    )
+# Wait for 1 second
+time.sleep(1)
 
-    cmd = ['ebook-convert', mobi_file, epub_file]
-    subprocess.run(cmd)
-
-mobi_to_epub('output.epub')
+# Convert output.mobi back to output.epub
+convert_ebook('output.mobi', 'output.epub', 'epub')

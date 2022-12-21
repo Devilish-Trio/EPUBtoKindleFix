@@ -1,5 +1,6 @@
 # Context
 - Amazon are catching up to reused epubs. On Reddit, a fix was established, and my goal is to make it simple as possible.
+- The script will convert an epub to mobi then back to change hash, bypassing Amazons anti piracy measures 
 - This script was created by ChatGPT A.I
 # Prerequisite
 - You need to have Calibre installed: https://calibre-ebook.com/

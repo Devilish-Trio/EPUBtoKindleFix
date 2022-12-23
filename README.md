@@ -1,7 +1,8 @@
 # Context
-- Amazon are catching up to reused epubs. On Reddit, a fix was established, and my goal is to make it simple as possible.
-- The script will convert an epub to mobi then back to change hashed epub, making it unique, bypassing Amazons anti piracy measures 
-- This script was created by ChatGPT A.I
+Amazon is catching up to reused e-books in the epub format, which can be a problem for people who have legitimately purchased e-books and want to use them on multiple devices. On Reddit, someone found a fix for this issue, and my goal is to explain it in a simple and easy-to-understand way.
+
+The fix involves using a script that converts an epub file to a mobi file, and then back to an epub file. This process changes the hashed epub file, making it unique and bypassing Amazon's anti-piracy measures. This allows people who have legitimately purchased e-books in the epub format to use them on multiple devices without any issues.
+
 # Prerequisite
 - You need to have Calibre installed: https://calibre-ebook.com/
 # How TO RUN
